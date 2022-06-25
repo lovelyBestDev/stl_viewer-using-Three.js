@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>STL Color Viewer</title>
+  <script type="text/javascript" src="asset/threejs.min.js"></script> 
+  <script type="text/javascript" src="asset/STLLoader.js"></script>
+  <script type="text/javascript" src="asset/OrbitControls.js"></script>
+  <script type="text/javascript" src="asset/weui/lib/jquery-2.1.4.js"></script>
+  <script type="text/javascript" src="asset/weui/js/jquery-weui.min.js"></script>
+  <link rel="stylesheet" href="asset/weui/lib/weui.min.css">
+  <link rel="stylesheet" href="asset/weui/css/jquery-weui.min.css">
+
+  <!-- <script src="stl_viewer.min.js"></script>    -->
+  <script src= "https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+  <style>
+    #webglDisplay {
+      width: 45vw;
+      height: 82vh;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="board_modelView">
+
+    <div id="webglDisplay">
+      <div id="stl_cont"></div>
+    </div>
+    
+      <div id="board_function">
+          <div id="f1_zoom">
+              <div class="zoom_text"></div>
+              <div class="zoom_controller_bar">
+                  <div id="zoom_controller_scroll"></div>
+              </div>
+          </div>
+          <div id="f2_rotation">
+              <div class="rotation_text"></div>
+              <div class="rotation_controller_board">
+                  <div id="rotation_controller"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="board_stl">
+      <div id="stl_models_view_image">
+          <div id="stl_models_view_board">
+              <div id="stl_models_panel">
+              </div>
+          </div>
+      </div>
+
+      <div id="preview-board" class="board_col">
+          <i class='fas fa-map-marker' id="col-sel-icon"></i>
+          <div id="col-panel"></div>
+          <div id="col-preview"></div>
+          <div id="btn_save" onclick="saveImage()"></div>
+      </div>
+  </div>
+
+
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</body>
+
+</html>

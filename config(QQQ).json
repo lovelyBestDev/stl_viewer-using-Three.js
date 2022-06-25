@@ -1,0 +1,24 @@
+{
+  "status": 0,
+  "msg": "SUCCESS",
+  "menuData": [
+    {
+      "title": "body",
+      "value": "body",
+      "src": "./model/stl/QQQ/QQQ0.stl",
+      "color": "#dddddd"
+    },
+    {
+      "title": "fly_left",
+      "value": "fly_left",
+      "src": "./model/stl/QQQ/QQQ1.stl",
+      "color": "#dddddd"
+    },
+    {
+      "title": "fly_right",
+      "value": "fly_right",
+      "src": "./model/stl/QQQ/QQQ2.stl",
+      "color": "#dddddd"
+    }
+  ]
+}

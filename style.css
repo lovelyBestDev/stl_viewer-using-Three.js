@@ -1,0 +1,224 @@
+body {
+	background-color: #333333;
+	padding: 20px;
+	padding-top: 50px;
+}
+
+
+.board_col {
+	width: 25vw;
+	height: 60vh; 
+	background-image: url('asset/img/board_colors.png');
+	background-size: 100% 100%;
+	margin: auto;
+	margin-top: 3vh;
+}
+#col-panel .col-sample {
+	width: 2vw;
+	height: 2vw; 
+	border: 3px solid white;
+	border-radius: 100%;
+	margin: 4px;
+    transition: 0.5s; 
+    position: absolute;
+}
+#col-preview {
+	width: 10vw;
+	height: 20vh;
+	background-image: url('asset/img/board_setedColorModelView.png');
+	background-size: 100% 100%;
+}
+
+
+.board_stl {
+	width: 40vw;
+	height: 80vh;
+	float: right;
+	margin-right: 5vw;
+	margin-top: 3vh;
+}
+#stl_models_view_image {
+	height: 20vh;
+	background-image: url('asset/img/board_eachModelsView.png');
+	background-size: 100% 100%;
+	position: relative;
+}
+#stl_models_view_board {
+	padding-top: 7vh;
+	margin-left: 4.5vw;
+	margin-right: 4.5vw;
+	overflow: auto;
+	overflow-y: hidden;
+}
+#stl_models_panel {
+	float: left;
+}
+#stl_models_panel .stl_modelItem {
+	padding-left: 10px;
+	width: 80px;
+	height: 9.5vh;
+	background-image: url('asset/img/board_eachModel.png');
+	background-size: 100% 100%;
+	float: left;
+	transition: .2s;
+}
+#stl_models_panel .stl_modelItem:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+#stl_models_panel .stl_modelItem:active {
+	cursor: pointer;
+	transform: scale(1.05);
+}
+.board_modelView {
+	width:45%;
+	height: 70vh;
+	margin-left: 5%;
+	
+	float: left;
+}
+#stl_cont {
+	height: 100%;
+	background-image: url('asset/img/board_showAllmodels.png');
+	background-size: 100% 100%;
+} 
+#stl_cont:hover {
+	cursor: pointer;
+}
+
+#board_function {
+	margin: auto;
+	width: 70%;
+	height: 10vh;
+}
+#f1_zoom {
+	height: 50%;
+	margin-top: 1.5vh;
+}
+
+#f1_zoom .zoom_text {
+	width: 15%;
+	height: 60%;
+	background-image: url('asset/img/txt_zoom.png');
+	background-size: 100% 100%;
+	float: left;
+	margin-left: 8%;
+}
+#f1_zoom .zoom_controller_bar {
+	width: 65%;
+	height: 40%;
+	background-image: url('asset/img/scroll_board.png');
+	background-size: 100% 100%;
+	float: right;
+	margin-right: 8%;
+	margin-top: 1%;
+}
+#zoom_controller_scroll {
+	/* transform: translate(-10px, -0.7vh); */
+	position: relative;
+	width: 10%;
+	height: 100%;
+	background-image: url('asset/img/scroll_bar.png');
+	background-size: 100% 100%;
+}
+#zoom_controller_scroll:hover {
+	cursor: pointer;
+}
+#f2_rotation {
+	height: 50%;
+}
+#f2_rotation .rotation_text {
+	width: 25%;
+	height: 60%;
+	background-image: url('asset/img/txt_rotation.png');
+	background-size: 100% 100%;
+	float: left;
+	margin-left: 20%;
+}
+.rotation_controller_board {
+	width: 6%;
+	height: 80%;
+	float: right;
+	margin-right: 35%;
+	background-image: url('asset/img/r-1.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	transition: .2s;
+}
+#rotation_controller {
+	width: 100%;
+	height: 70%;
+	margin-left: 5%;
+	background-image: '';
+	background-size: 100% 100%;
+}
+.rotation_controller_board:hover {
+	cursor: pointer;
+	transform: scale(1.3);
+}
+.rotation_controller_board:active {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+#stl_models_view_board::-webkit-scrollbar {
+	height: 15px;
+}
+#stl_models_view_board::-webkit-scrollbar-track {
+	background: transparent;
+	border: 1px #cccccc solid;
+}
+#stl_models_view_board::-webkit-scrollbar-thumb {
+	background: transparent;
+	border: 1px #cccccc solid;
+
+}
+#stl_models_view_board::-webkit-scrollbar-thumb:hover {
+	cursor: pointer;
+	background: rgba(0, 255, 255, 0.1);
+	border: 1px #00ffff solid;
+	box-shadow: 0 0 5px #00ffff;
+}
+
+
+/* .zoom_controller_bar::-webkit-scrollbar {
+	height: 15px;
+}
+.zoom_controller_bar::-webkit-scrollbar-track {
+	background-image: url('asset/img/scroll_board.png');
+	background-size: 100% 100%;
+}
+.zoom_controller_bar::-webkit-scrollbar-thumb {
+	background-image: url('asset/img/scroll_bar.png');
+	background-size: 100% 100%;
+}
+.zoom_controller_bar::-webkit-scrollbar-thumb:hover {
+	cursor: pointer;
+} */
+
+#btn_save {
+	margin-top: 41vh;
+	margin-left: 9vw;
+	width: 8vw;
+	height: 4vh;
+	background-image: url('asset/img/btn_register.png');
+	background-size: 100% 100%;
+	transition: .3s;
+}
+#btn_save:hover {
+	cursor: pointer;
+	transform: scale(1.22);
+}
+#btn_save:active {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+
+#col-sel-icon {
+	font-size: 30px;
+	color: greenyellow;
+	margin-left: 12vw;
+	margin-top: 7vh;
+	position: absolute;
+}

@@ -1,0 +1,36 @@
+{
+  "status": 0,
+  "msg": "SUCCESS",
+  "menuData": [
+    {
+      "title": "body",
+      "value": "body",
+      "src": "./model/stl/part/part1.stl",
+      "color": "#dddddd"
+    },
+    {
+      "title": "foot",
+      "value": "foot",
+      "src": "./model/stl/part/part2.stl",
+      "color": "#dddddd"
+    },
+    {
+      "title": "nose",
+      "value": "nose",
+      "src": "./model/stl/part/part3.stl",
+      "color": "#dddddd"
+    },
+    {
+      "title": "eye",
+      "value": "eye",
+      "src": "./model/stl/part/part4.stl",
+      "color": "#dddddd"
+    },
+    {
+      "title": "face",
+      "value": "face",
+      "src": "./model/stl/part/part5.stl",
+      "color": "#dddddd"
+    }
+  ]
+}
